@@ -1,0 +1,20 @@
+
+
+.centralizado {
+    text-align: center; 
+    vertical-align: middle; 
+}
+
+.lateral {
+    float: left; 
+    position: relative; 
+}
+
+.transparente {
+    opacity: 0.5; 
+}
+
+img {
+    width: 100px; 
+    height: 75px;
+}
