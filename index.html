@@ -3,39 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-   <link rel="stylesheet" href="./styles.css">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-  
-    <img src="./assets/background.jpg"  alt="netflix-logo"  id="background-img" >
-    <img src="./assets/netflix-logo.png" alt="netflix-logo" id="logo">
-
-
+    <img src="./assets/netflix-logo.png" alt="netflix-logo" id="logo" />
     <div id="overlay"></div>
+
     <div id="form-container">
-        <form action="" >
-            <p id="title">Entrar</p>
-        <div >
-          <label for="email">Email:</label>
-            <input type="email" name="E-mail">8
+      <form>
+        <p id="title">Entrar</p>
+        <div class="form-group">
+          <input type="text" id="email" name="email" required />
+          <label for="email">Email ou número de telefone</label>
         </div>
-        <div>
-            <input type="password" name="Senha" id="">
+        <div class="form-group">
+          <input type="password" id="password" name="password" required />
+          <label for="password">Senha</label>
         </div>
-        </form>
+        <button type="submit" id="button-enter">Entrar</button>
+        <div class="row">
+          <div class="checkbox-container">
+            <input type="checkbox" class="checkbox" />
+            <p class="label-checkbox">Lembre-se de mim</p>
+          </div>
+
+          <a href="" id="help">Precisa de ajuda?</a>
+        </div>
+      </form>
+
+      <p>
+        <span class="assination-label">Novo por aqui?</span>
+        <a href="" id="assination">Assine agora.</a>
+      </p>
+
+      <p>
+        <span class="reCAPTCHA"
+          >Esta página é protegida pelo Google reCAPTCHA para garantir que você
+          não é um robô.</span
+        ><a href="" id="more">Saiba mais.</a>
+      </p>
     </div>
-    <div class="site-footer-wrapper">
-      <div>
+    <div class="footer-container">
+      <div class="footer">
         <p>Dúvidas? Ligue 85991380651</p>
         <ul>
-            <li>
-              <a href="https://help.netflix.com/support/412">
-                <span>
-                  Perguntas frequentes
-                </span>
-              </a>
-            </li>
+          <li>
+            <a href="https://help.netflix.com/support/412">
+              <span> Perguntas frequentes </span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
